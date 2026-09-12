@@ -38,6 +38,7 @@ Features:
 %install
 %meson_install
 %find_lang %{appname}
+%fdupes %{_datadir}/locale
 
 %check
 appstreamcli validate --no-net --explain %{buildroot}%{metainfodir}/%{appname}.metainfo.xml
