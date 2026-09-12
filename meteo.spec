@@ -1,4 +1,5 @@
 %global appname com.gitlab.bitseater.%{name}
+%global metainfodir %{_datadir}/metainfo
 
 Name:           meteo
 Version:        1.0.0
@@ -39,7 +40,7 @@ Features:
 %find_lang %{appname}
 
 %check
-appstreamcli validate --no-net --explain %{buildroot}%{_metainfodir}/%{appname}.metainfo.xml
+appstreamcli validate --no-net --explain %{buildroot}%{metainfodir}/%{appname}.metainfo.xml
 desktop-file-validate %{buildroot}%{_datadir}/applications/%{appname}.desktop
 
 %files
@@ -50,7 +51,7 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/%{appname}.desktop
 %{_datadir}/glib-2.0/schemas/*.gschema.xml
 %{_datadir}/icons/hicolor/*/*/*.svg
 %{_datadir}/locale/*/LC_MESSAGES/%{appname}.mo
-%{_metainfodir}/*.metainfo.xml
+%{metainfodir}/*.metainfo.xml
 %{_mandir}/man1/*.1*
 
 %changelog
