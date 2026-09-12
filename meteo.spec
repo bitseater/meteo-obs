@@ -8,7 +8,7 @@ License:        GPLv3+
 URL:            https://gitlab.com/bitseater/meteo
 Source0:        %{name}-%{version}.tar.gz
 
-%define DEPENS_RPM desktop-file-utils, rpmdevtools, git, gcc, wget, meson, ninja, vala, vala-devel, gettext, libgee-devel, gtk4-devel, libadwaita-devel, pkgconfig(libsoup-3.0), json-glib-devel, pkgconfig(webkit2gtk-4.1), AppStream
+%define DEPENS_RPM desktop-file-utils, rpmdevtools, git, gcc, wget, meson, ninja, vala, vala-devel, gettext, libgee-devel, gtk4-devel, libadwaita-devel, libsoup-devel, json-glib-devel, webkitgtk-6.0-devel, AppStream
 
 BuildRequires:  %{DEPENS_RPM}
 
