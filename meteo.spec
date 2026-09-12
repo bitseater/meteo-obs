@@ -6,9 +6,9 @@ Release:        1%{?dist}
 Summary:        Forecast application using OpenWeatherMap API
 License:        GPLv3+
 URL:            https://gitlab.com/bitseater/meteo
-Source0:        %{url}/-/archive/%{version}/%{name}-%{version}.tar.gz
+Source0:        %{name}-%{version}.tar.gz
 
-%define DEPENS_RPM desktop-file-utils, rpmdevtools, git, gcc, wget, meson, ninja-build, vala, vala-devel, gettext, libgee-devel, gtk4-devel, libadwaita-devel, libsoup3-devel, json-glib-devel, webkitgtk6.0-devel, appstream
+%define DEPENS_RPM desktop-file-utils, rpmdevtools, git, gcc, wget, meson, ninja, vala, vala-devel, gettext, libgee-devel, gtk4-devel, libadwaita-devel, libsoup-3_0-devel, json-glib-devel, webkit2gtk3-devel, AppStream
 
 BuildRequires:  %{DEPENS_RPM}
 

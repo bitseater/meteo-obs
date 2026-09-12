@@ -1,0 +1,5 @@
+<services>
+  <service name="download_url">
+    <param name="url">https://gitlab.com</param>
+  </service>
+</services>
