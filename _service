@@ -1,5 +1,6 @@
 <services>
   <service name="download_url">
-    <param name="url">https://gitlab.com</param>
+    <param name="url">https://gitlab.com/bitseater/meteo/-/archive/1.0.0/meteo-1.0.0.tar.gz</param>
+    <param name="filename">meteo-1.0.0.tar.gz</param>
   </service>
 </services>
